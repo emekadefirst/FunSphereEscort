@@ -1,0 +1,48 @@
+
+    <style>
+        .card {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-img-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            box-sizing: border-box;
+        }
+
+        .card h5, .card p {
+            margin: 0;
+        }
+
+        .card h5 {
+            margin-bottom: 5px;
+        }
+    </style>
+
+    <div class="col mt-5">
+        <div class="card text-bg-dark">
+            <img src="assets/img/about.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h5 class="mt-5">Kelly Black</h5>
+                <p class="card-text">$225 25year Russian<br>Sexy red sweet blonde play girl</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
