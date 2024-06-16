@@ -8,6 +8,7 @@
     <title>FunSphereEscort</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
+
     <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
     <link
@@ -20,71 +21,181 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-</head>
-<style>
-    .card {
-        position: relative;
-        overflow: hidden;
-        transition: transform 0.3s ease-in-out;
-    }
 
-    .card:hover {
-        transform: scale(1.05);
-    }
-
-    .card-img {
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-        transition: transform 0.3s ease-in-out;
-        position: relative;
-    }
-
-    .card-img:hover {
-        transform: scale(1.05);
-    }
-
-    .card-img-overlay {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        padding: 10px;
-        background: rgba(0, 0, 0, 0.185);
-        color: white;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-
-    .card h5,
-    .card p {
-        margin: 0;
-        text-align: left;
-    }
-
-    .card h5 {
-        margin-bottom: 5px;
-    }
-
-    .badge {
-        position: absolute;
-        top: 10px;
-        right: 0;
-        padding: 5px 10px;
-        border-radius: 3px;
-        font-size: 0.9em;
-        font-weight: bold;
-    }
-
-    @media (max-width: 767px) {
-        .col-6-sm {
-            flex: 0 0 50%;
-            max-width: 50%;
+    <style>
+        .card {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
         }
-    }
-</style>
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .personal-details {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .personal-details .title {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .details-grid .item {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+
+        .details-grid .item h5 {
+            font-size: 16px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .details-grid .item p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .card-img {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+        }
+
+        .card-img:hover {
+            transform: scale(1.05);
+        }
+
+        .card-img-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.185);
+            color: white;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .card h5,
+        .card p {
+            margin: 0;
+            text-align: left;
+        }
+
+        .card h5 {
+            margin-bottom: 5px;
+        }
+
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 0;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        @media (max-width: 767px) {
+            .col-6-sm {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+
+            .d-img {
+                flex: 0 0 100%;
+                width: 450px;
+                margin-left: 10px;
+            }
+        }
+
+        .details-section {
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .details-section h5 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        .details-section .section-content {
+            padding: 10px 0;
+        }
+
+        .details-section .price {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+
+        .details-section .price div {
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 10px;
+            width: 45%;
+        }
+
+        .footer-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .footer-bar i {
+            margin-right: 10px;
+        }
+
+        .footer-bar span {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .review {
+            margin-bottom: 15px;
+        }
+
+        .review h6 {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .review p {
+            margin: 0;
+        }
+
+        .review .review-date {
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
 
 <body>
     <header id="header" class="fixed-top">
@@ -97,152 +208,160 @@
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
-
             <div class="header-social-links">
                 <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
                 <a href="#" class="linkedin"><i class="bi bi-telegram"></i></i></a>
             </div>
         </div>
     </header>
-    <section class="grid text-center mt-5">
+
+    <section class="grid text-center mt-5 ml-2">
         <div class="row ml-2">
             <div class="col">
-                <img src="assets/img/about.jpg" alt="">
+                <img src="assets/img/about.jpg" class="d-img" alt="">
                 <div class="tag m-3">
-                    <h3>Checkout more Photos</h3>
-                </div>
-                <div class="row row-cols-2 ml-2 pl-2"> 
-                    <div class="col mt-5 col-6-sm">
-                        <a href="detail.html">
-                            <div class="card text-bg-dark">
-                                <img src="assets/img/about.jpg" class="card-img" alt="...">
-                                <div class="badge">VERIFIED</div>
-                                <div class="card-img-overlay">
-                                    <h5 class="mt-5">Kelly Black</h5>
-                                    <p class="card-text">$225 25year Russian<br>Sexy red sweet blonde play girl</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col mt-5 col-6-sm">
-                        <a href="detail.html">
-                            <div class="card text-bg-dark">
-                                <img src="assets/img/about.jpg" class="card-img" alt="...">
-                                <div class="badge">VERIFIED</div>
-                                <div class="card-img-overlay">
-                                    <h5 class="mt-5">Kelly Black</h5>
-                                    <p class="card-text">$225 25year Russian<br>Sexy red sweet blonde play girl</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col mt-5 col-6-sm ml-2">
-                        <a href="detail.html">
-                            <div class="card text-bg-dark">
-                                <img src="assets/img/about.jpg" class="card-img" alt="...">
-                                <div class="badge">VERIFIED</div>
-                                <div class="card-img-overlay">
-                                    <h5 class="mt-5">Kelly Black</h5>
-                                    <p class="card-text">$225 25year Russian<br>Sexy red sweet blonde play girl</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="#" class="text-primary">view more photos of her</a>
                 </div>
             </div>
             <div class="col">
                 <h1>About Us</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container" data-aos="fade-up">
-
-            <div class="section-title">
-                <h2>Contact</h2>
-            </div>
-            <div class="row mt-5">
-
-                <div class="col-lg-4">
-                    <div class="info">
-                        <div class="address">
-                            <i class="bi bi-geo-alt"></i>
-                            <h4>Location:</h4>
-                            <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et</p>
+                <div class="container mt-4">
+                    <div class="personal-details">
+                        <div class="title">Personal Details</div>
+                        <div class="details-grid">
+                            <div class="item">
+                                <h5>Base City</h5>
+                                <p>Georgia · Batumi</p>
+                            </div>
+                            <div class="item">
+                                <h5>Nationality</h5>
+                                <p>Russian</p>
+                            </div>
+                            <div class="item">
+                                <h5>Age</h5>
+                                <p>25</p>
+                            </div>
+                            <div class="item">
+                                <h5>Height</h5>
+                                <p>167cm / 5'6"</p>
+                            </div>
+                            <div class="item">
+                                <h5>Weight</h5>
+                                <p>48kg / 105lbs</p>
+                            </div>
+                            <div class="item">
+                                <h5>Body (cm)</h5>
+                                <p>87/65/90</p>
+                            </div>
+                            <div class="item">
+                                <h5>Ethnic group</h5>
+                                <p>White</p>
+                            </div>
+                            <div class="item">
+                                <h5>Hair</h5>
+                                <p>Red Hair</p>
+                            </div>
+                            <div class="item">
+                                <h5>Eyes</h5>
+                                <p>Grey Eyes</p>
+                            </div>
+                            <div class="item">
+                                <h5>Orientation</h5>
+                                <p>Heterosexual</p>
+                            </div>
+                            <div class="item">
+                                <h5>Meeting place</h5>
+                                <p>Incall, Outcall</p>
+                            </div>
+                            <div class="item">
+                                <h5>Meeting with...</h5>
+                                <p>Meeting with men and a couple</p>
+                            </div>
+                            <div class="item">
+                                <h5>Languages</h5>
+                                <p>Russian and English speaking</p>
+                            </div>
+                            <div class="item">
+                                <h5>Favourite drink</h5>
+                                <p>Wine</p>
+                            </div>
                         </div>
-
-                        <div class="email">
-                            <i class="bi bi-envelope"></i>
-                            <h4>Email:</h4>
-                            <p>info@example.com</p>
-                        </div>
-
-                        <div class="phone">
-                            <i class="bi bi-phone"></i>
-                            <h4>Call:</h4>
-                            <p>+1 5589 55488 55s</p>
-                        </div>
-
                     </div>
-
                 </div>
-
-                <div class="col-lg-8 mt-5 mt-lg-0">
-
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                            <div class="col-md-6 form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                                    required>
-                            </div>
-                            <div class="col-md-6 form-group mt-3 mt-md-0">
-                                <input type="email" class="form-control" name="email" id="email"
-                                    placeholder="Your Email" required>
-                            </div>
-                        </div>
-                        <div class="form-group mt-3">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                                required>
-                        </div>
-                        <div class="form-group mt-3">
-                            <textarea class="form-control" name="message" rows="5" placeholder="Message"
-                                required></textarea>
-                        </div>
-                        <div class="my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                        </div>
-                        <div class="text-center"><button type="submit">Send Message</button></div>
-                    </form>
-
-                </div>
-
             </div>
-
         </div>
     </section>
-    <footer id="footer">
-        <div class="container">
-            <div class="copyright">
-                &copy; Copyright <strong><span>FunSphereEscort</span></strong>. All Rights Reserved
+
+    <section>
+        <div class="container text-center mt-5">
+            <div class="details-section">
+                <h5>Rates</h5>
+                <div class="price">
+                    <div>
+                        <h5>1 hour</h5>
+                        <p>300 €</p>
+                    </div>
+                    <div>
+                        <h5>2 hours</h5>
+                        <p>500 €</p>
+                    </div>
+                </div>
+                <div class="price">
+                    <div>
+                        <h5>3 hours</h5>
+                        <p>700 €</p>
+                    </div>
+                    <div>
+                        <h5>1 day</h5>
+                        <p>1200 €</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
+    </section>
 
-    <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <section>
+        <div class="container">
+            <div class="details-section">
+                <div class="section-content">
+                    <h5>Reviews</h5>
+                    <div class="review">
+                        <h6>John Doe</h6>
+                        <p class="review-date">June 10, 2024</p>
+                        <p>Great service! Very professional and friendly. Highly recommended.</p>
+                    </div>
+                    <div class="review">
+                        <h6>Jane Smith</h6>
+                        <p class="review-date">June 15, 2024</p>
+                        <p>Had an amazing time. Will definitely book again!</p>
+                    </div>
+                    <div class="review">
+                        <h6>Michael Brown</h6>
+                        <p class="review-date">June 20, 2024</p>
+                        <p>Lexa was fantastic. She made sure I was comfortable and had everything I needed.</p>
+                    </div>
+                </div>
+                <hr>
+                <hr>
+                <div class="section-content">
+                    <form>
+                        <div class="mb-3">
+                            <input type="test" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Share your honest review">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-bar">
+        <i class="bi bi-telephone"></i><span>Contact Her</span>
+    </div>
+
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
