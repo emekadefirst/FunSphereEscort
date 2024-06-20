@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>FunSphereEscort</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <style>
+        .card {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .personal-details {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .personal-details .title {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .details-grid .item {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+
+        .details-grid .item h5 {
+            font-size: 16px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .details-grid .item p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .card-img {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+        }
+
+        .card-img:hover {
+            transform: scale(1.05);
+        }
+
+        .card-img-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.185);
+            color: white;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .card h5,
+        .card p {
+            margin: 0;
+            text-align: left;
+        }
+
+        .card h5 {
+            margin-bottom: 5px;
+        }
+
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 0;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        @media (max-width: 767px) {
+            .col-6-sm {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+
+            .d-img {
+                flex: 0 0 100%;
+                width: 450px;
+                margin-left: 10px;
+            }
+        }
+
+        .details-section {
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .details-section h5 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        .details-section .section-content {
+            padding: 10px 0;
+        }
+
+        .details-section .price {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+
+        .details-section .price div {
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 10px;
+            width: 45%;
+        }
+
+        .footer-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .footer-bar i {
+            margin-right: 10px;
+        }
+
+        .footer-bar span {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .review {
+            margin-bottom: 15px;
+        }
+
+        .review h6 {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .review p {
+            margin: 0;
+        }
+
+        .review .review-date {
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="fixed-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <div class="header-social-links">
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-telegram"></i></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="grid text-center mt-5 ml-2">
+        <div class="row ml-2">
+            <div class="col">
+                <img src="assets/img/img9.jpeg" class="d-img" alt="">
+                <div class="tag m-3">
+                    <a href="#" class="text-primary">view more photos of her</a>
+                </div>
+            </div>
+            <div class="col">
+                <h1>Sexy devil</h1>
+                <p>
+                    Hi guys I am Suzy beautiful independent.. I am super sexy as you can see on my pictures which are 100% genuine!! REAL
+                    PICS? , I love to be GFE, Also I can be very Naughty girl if that is what turns you on!! GFE experience ???
+                    Naughty and SEXY ?? I have a pretty face and a beautiful body with real breasts ... I am also cheerful, intelligent and
+                    well educated with good manners. You will really enjoy the time with me.
+
+                </p>
+                <div class="container mt-4">
+                    <div class="personal-details">
+                        <div class="title">Personal Details</div>
+                        <div class="details-grid">
+                            <div class="item">
+                                <h5>Base City</h5>
+                                <p>Georgia · Batumi</p>
+                            </div>
+                            <div class="item">
+                                <h5>Nationality</h5>
+                                <p>French</p>
+                            </div>
+                            <div class="item">
+                                <h5>Age</h5>
+                                <p>27</p>
+                            </div>
+                            <div class="item">
+                                <h5>Height</h5>
+                                <p>168 cm / 5'6"</p>
+                            </div>
+                            <div class="item">
+                                <h5>Weight</h5>
+                                <p>48kg / 105lbs</p>
+                            </div>
+                            <div class="item">
+                                <h5>Body (cm)</h5>
+                                <p>80/60/85</p>
+                            </div>
+                            <div class="item">
+                                <h5>Ethnic group</h5>
+                                <p>Caucasian</p>
+                            </div>
+                            <div class="item">
+                                <h5>Hair</h5>
+                                <p>Change hair color alot</p>
+                            </div>
+                            <div class="item">
+                                <h5>Eyes</h5>
+                                <p>Blue</p>
+                            </div>
+                            <div class="item">
+                                <h5>Orientation</h5>
+                                <p>Heterosexual</p>
+                            </div>
+                            <div class="item">
+                                <h5>Meeting place</h5>
+                                <p>Incall, Outcall</p>
+                            </div>
+                            <div class="item">
+                                <h5>Meeting with...</h5>
+                                <p>Meeting with men and a couple</p>
+                            </div>
+                            <div class="item">
+                                <h5>Languages</h5>
+                                <p>Russian and English speaking</p>
+                            </div>
+                            <div class="item">
+                                <h5>Meeting with</h5>
+                                <p>Meeting with a man and a couple</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container text-center mt-5">
+            <div class="details-section">
+                <h5>Rates</h5>
+                <div class="price">
+                    <div>
+                        <h5>1 hour</h5>
+                        <p>300 €</p>
+                    </div>
+                    <div>
+                        <h5>2 hours</h5>
+                        <p>500 €</p>
+                    </div>
+                </div>
+                <div class="price">
+                    <div>
+                        <h5>3 hours</h5>
+                        <p>700 €</p>
+                    </div>
+                    <div>
+                        <h5>1 day</h5>
+                        <p>1200 €</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="details-section">
+                <div class="section-content">
+                    <h5>Reviews</h5>
+                    <div class="review">
+                        <h6>John Doe</h6>
+                        <p class="review-date">June 10, 2024</p>
+                        <p>Great service! Very professional and friendly. Highly recommended.</p>
+                    </div>
+                    <div class="review">
+                        <h6>Jane Smith</h6>
+                        <p class="review-date">June 15, 2024</p>
+                        <p>Had an amazing time. Will definitely book again!</p>
+                    </div>
+                    <div class="review">
+                        <h6>Michael Brown</h6>
+                        <p class="review-date">June 20, 2024</p>
+                        <p>Lexa was fantastic. She made sure I was comfortable and had everything I needed.</p>
+                    </div>
+                </div>
+                <hr>
+                <hr>
+                <div class="section-content">
+                    <form>
+                        <div class="mb-3">
+                            <input type="test" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Share your honest review">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-bar">
+        <i class="bi bi-telephone"></i><span>Book now!!!</span>
+    </div>
+
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
