@@ -1,0 +1,287 @@
+
+h1,
+h2 {
+    color: #333;
+    margin: 10px 0px !important;
+}
+
+.d-img {
+    width: fit-content;
+    height: 60%;
+}
+
+p {
+    margin: 10px 10px !important;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.section {
+    text-align: left;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.rates {
+    text-align: left;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.cta {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    height: 320px;
+}
+
+.bio {
+    text-align: left !important;
+}
+
+.card-img {
+    width: 100%;
+    height: 320px;
+    height: auto;
+    position: relative;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.card:hover .card-img {
+    transform: scale(1.06);
+}
+
+.card-img-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(146, 145, 145, 0.082);
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card h5,
+.card p {
+    margin: 0;
+    text-align: left;
+}
+
+.card h5 {
+    margin-bottom: 5px;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .col-6-sm {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    .card {
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        object-fit: cover;
+        transition: .5s;
+    }
+
+    .d-img {
+    width: 320px;
+    height: 90%;
+}
+}
+
+.personal-details {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.personal-details .title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.details-grid .item {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+}
+
+.details-grid .item h5 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.details-grid .item p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.card-img {
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.card-img:hover {
+    transform: scale(1.05);
+}
+
+.card-img-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.185);
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card h5,
+.card p {
+    margin: 0;
+    text-align: left;
+}
+
+.card h5 {
+    margin-bottom: 5px;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .col-6-sm {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+.details-section {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.details-section h5 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.details-section .section-content {
+    padding: 10px 0;
+}
+
+.details-section .price {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.details-section .price div {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    width: 45%;
+}
+
+.footer-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-bar i {
+    margin-right: 10px;
+}
+
+.footer-bar span {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.review {
+    margin-bottom: 15px;
+}
+
+.review h6 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.review p {
+    margin: 0;
+}
+
+.review .review-date {
+    font-size: 0.9rem;
+    color: #777;
+}
