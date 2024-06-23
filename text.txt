@@ -1,48 +1,40 @@
+	◦	*Taylor Details*
+	◦	United States 
+	◦	   - Nationality: Puerto Rico
+	◦	   - Age: 26
+	◦	   - Height: 167.64 cm / 5'6"
+	◦	   - Weight: 56 kg / 123 lbs
+	◦	   - Body (cm): 50/50/55
+	◦	   - Ethnic group: Latina
+	◦	   - Hair: Black
+	◦	   - Eyes: Brown
+	◦	   - Orientation: Bisexual
+	◦	   - Meeting place: Incall and outcall
+	◦	   - Meeting with: Meeting with a man and a woman
+	◦	   - Languages: English
 
-    <style>
-        .card {
-            position: relative;
-            overflow: hidden;
-            transition: transform 0.3s ease-in-out;
-        }
 
-        .card:hover {
-            transform: scale(1.05);
-        }
 
-        .card-img {
-            width: 100%;
-            height: auto;
-        }
+    Exploring New Horizons? 
+Ready to embark on a journey of discovery? Offering a variety of massages and connections. Open-minded and 420 Friendly
 
-        .card-img-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            box-sizing: border-box;
-        }
 
-        .card h5, .card p {
-            margin: 0;
-        }
+	*Erica Details*
+	◦	United States 
+	◦	   - Nationality: American
+	◦	   - Age: 27
+	◦	   - Height: 167.64 cm / 5'6"
+	◦	   - Weight: 56 kg / 123 lbs
+	◦	   - Body (cm): 50/50/55
+	◦	   - Ethnic group: White
+	◦	   - Hair: Blonde
+	◦	   - Eyes: Black
+	◦	   - Orientation: Bisexual
+	◦	   - Meeting place: Incall and outcall
+	◦	   - Meeting with: Meeting with a man and a woman
+	◦	   - Languages: English
 
-        .card h5 {
-            margin-bottom: 5px;
-        }
-    </style>
 
-    <div class="col mt-5">
-        <div class="card text-bg-dark">
-            <img src="assets/img/about.jpg" class="card-img" alt="...">
-            <div class="card-img-overlay">
-                <h5 class="mt-5">Kelly Black</h5>
-                <p class="card-text">$225 25year Russian<br>Sexy red sweet blonde play girl</p>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+  
+  Professional Masseuse & Escort 
+Ready for a personalized experience? Offering a variety of massages and hookup services. Open-minded and 420 friendly. Let's make your session unforgettable.
