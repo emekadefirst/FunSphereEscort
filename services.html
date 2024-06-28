@@ -25,6 +25,39 @@
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <style>
+    .icon-white i {
+      color: white !important;
+    }
+  
+    .icon-white i:hover {
+      color: #34b7a7 !important;
+    }
+  
+    .navbar img {
+      height: 50px;
+      width: auto;
+      margin-right: 15px;
+    }
+  
+    #navbar ul {
+      display: flex;
+      align-items: center;
+    }
+  
+    #navbar li {
+      list-style: none;
+      margin-left: 20px;
+    }
+  
+    #navbar a {
+      color: black !important;
+      text-decoration: none;
+      padding: 8px 12px;
+    }
+  
+    #navbar a:hover {
+      color: #34b7a7;
+    }
   .card {
     position: relative;
     overflow: hidden;
@@ -106,21 +139,39 @@
 </style>
 <body>
   <header id="header" class="fixed-top">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="home.html">Escort</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-      <div class="header-social-links">
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-telegram"></i></i></a>
+    <nav class="navbar navbar-light bg-white fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/assets/img/logo.jpeg" alt="Logo">FunSphereEscort</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Light offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="escort.html">Escort</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Service</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
       </div>
-    </div>
+    </nav>
   </header>
 
   <main id="main">
@@ -231,128 +282,8 @@
       </div>
     </section>
     </section>
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-    
-        <div class="section-title">
-          <h2>Contact</h2>
-        </div>
-        <div class="row mt-5">
-    
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
-    
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
-              </div>
-    
-            </div>
-    
-          </div>
-    
-          <div class="col-lg-8 mt-5 mt-lg-0">
-    
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-    
-          </div>
-    
-        </div>
-    
-      </div>
-    </section>
   </main><!-- End #main -->
-  <section id="contact" class="contact">
-    <div class="container" data-aos="fade-up">
-  
-      <div class="section-title">
-        <h2>Contact</h2>
-      </div>
-  
-      <div>
-        <iframe style="border:0; width: 100%; height: 270px;"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-          frameborder="0" allowfullscreen></iframe>
-      </div>
-  
-      <div class="row mt-5">
-  
-        <div class="col-lg-4">
-          <div class="info">  
-            <div class="email">
-              <i class="bi bi-envelope"></i>
-              <h4>Email:</h4>
-              <p>info@example.com</p>
-            </div>
-  
-            <div class="phone">
-              <i class="bi bi-phone"></i>
-              <h4>Call:</h4>
-              <p>+1 5589 55488 55s</p>
-            </div>
-  
-          </div>
-  
-        </div>
-  
-        <div class="col-lg-8 mt-5 mt-lg-0">
-  
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-            <div class="row">
-              <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-              </div>
-              <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-              </div>
-            </div>
-            <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-            </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-            </div>
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
-  
-        </div>
-  
-      </div>
-  
-    </div>
-  </section>
+
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
