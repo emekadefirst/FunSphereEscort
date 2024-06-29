@@ -23,24 +23,77 @@
     <link href="/assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/app.css">
 </head>
+<style>
+    .icon-white i {
+  color: white !important;
+}
 
+.icon-white i:hover {
+  color: #34b7a7 !important;
+}
+
+.navbar img {
+  height: 50px;
+  width: auto;
+  margin-right: 15px;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+}
+
+#navbar li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+#navbar a {
+  color: black !important;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+#navbar a:hover {
+  color: #34b7a7;
+}
+</style>
 <body>
-    <header id="header" class="fixed-top">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
-            <nav id="navbar" class="navbar order-last order-lg-0">
-                <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav>
-            <div class="header-social-links">
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-telegram"></i></a>
-            </div>
+<header id="header" class="fixed-top">
+    <nav class="navbar navbar-light bg-white fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/assets/img/logo.jpeg" alt="Logo">FunSphereEscorts</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">FunSphereEscorts</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="escort.html">Escort</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Service</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-    </header>
+      </div>
+    </nav>
+  </header>
 
 
     <section class="grid text-center mt-5 ml-2">
@@ -244,6 +297,7 @@
             </div>
         </div>
     </section>
+    <a href="/escort.html"><button type="submit" class="btn btn-primary  m-3">Back</button></a>
     <div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="photoModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">

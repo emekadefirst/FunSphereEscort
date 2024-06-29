@@ -23,7 +23,77 @@
     <link href="/assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/app.css">
 </head>
+<style>
+    .icon-white i {
+  color: white !important;
+}
 
+.icon-white i:hover {
+  color: #34b7a7 !important;
+}
+
+.navbar img {
+  height: 50px;
+  width: auto;
+  margin-right: 15px;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+}
+
+#navbar li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+#navbar a {
+  color: black !important;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+#navbar a:hover {
+  color: #34b7a7;
+}
+</style>
+<body>
+<header id="header" class="fixed-top">
+    <nav class="navbar navbar-light bg-white fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/assets/img/logo.jpeg" alt="Logo">FunSphereEscorts</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">FunSphereEscorts</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="escort.html">Escort</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Service</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 <body>
     <header id="header" class="fixed-top">
         <div class="container-fluid d-flex justify-content-between align-items-center">
@@ -59,6 +129,15 @@
                     Exploring New Horizons?
                     Ready to embark on a journey of discovery? Offering a variety of massages and connections. Open-minded and 420 Friendly
                 </p>
+                <div class="section rates">
+                    <h2>Rates</h2>
+                    <ul>
+                        <li>One Hour of Bliss: $200</li>
+                        <li>Two Hours of Pure Ecstasy: $350</li>
+                        <li>Three Hours of Extravaganza: $500</li>
+                        <li>All Night Escape: $800</li>
+                    </ul>
+                </div>
                 <div class="container mt-4">
                     <div class="personal-details">
                         <div class="title">Personal Details</div>
@@ -132,21 +211,21 @@
                     </div>
                     <div class="review">
                         <h6>
-                            loe
+                            Edward
                         </h6>
-                        <p>Had an amazing time. Will definitely book again!</p>
+                        <p>Her presence is captivating and her service impeccable.</p>
                     </div>
             
                     <div class="review">
-                        <h6>Dyland</h6>
-                        <p>I'll definitely book next time </p>
+                        <h6>Christopher</h6>
+                        <p>was a wonderful companion. She made my evening unforgettable.</p>
                     </div>
                     <div class="review">
                         <h6>John</h6>
-                        <p>Great service! professional and friendly. Highly recommended.</p>
+                        <p>is incredibly attentive and made sure all my needs were met.</p>
                     </div>
                     <div class="review">
-                        <h6>Smith</h6>
+                        <h6>Smith Jed</h6>
                         <p>Had an amazing time. Will definitely book again!</p>
                     </div>
                     <div class="review">
@@ -170,8 +249,37 @@
                         <p>I thought she was fake but i guessed wrong. </p>
                     </div>
                     <div class="review">
-                        <h6>Erik</h6>
-                        <p>🔥🔥</p>
+                        <h6>Justin</h6>
+                        <p>Savannah made me feel completely at ease. A wonderful experience.</p>
+                    </div>
+                    <div class="review">
+                        <h6>Brandon</h6>
+                        <p>Jasmine is the epitome of elegance and sophistication</p>
+                    </div>
+                    <div class="review">
+                        <h6>Jonathan</h6>
+                        <p>She is a rare gem. Beautiful, intelligent, and engaging.</p>
+                    </div>
+                    <div class="review">
+                        <h6>Jeffrey</h6>
+                        <p>she was attentive, professional, and incredibly beautiful</p>
+                    </div>
+                    <div class="review">
+                        <h6>Eric</h6>
+                        <p>Exceptional service from a truly exceptional ladv.</p>
+                    </div>
+                    <div class="review">
+                        <h6>Josh</h6>
+                        <p>was warm, engaging, and truly stunning.</p>
+                    </div>
+                    <div class="review">
+                        <h6>Kamuel</h6>
+                        <p>An amazing experience from start to finish with her. Highly recommend." -
+                            Raymond</p>
+                    </div>
+                    <div class="review">
+                        <h6>Benjamin</h6>
+                        <p>She is the perfect escort. Beautiful, intelligent, and professional.</p>
                     </div>
                 </div>
                 <hr>
@@ -187,6 +295,7 @@
                 </div>
             </div>
         </div>
+        <a href="/escort.html"><button type="submit" class="btn btn-primary  m-3">Back</button></a>
     </section>
     <div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="photoModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
